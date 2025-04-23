@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Coding Mentor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI Coding Mentor</h1>
+    <p>Your Personalized Path to Becoming a Software Engineer</p>
+  </header>
+
+  <nav>
+    <a href="feature.html">Features</a>
+    <a href="join.html">Join Now</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Revolutionizing Coding Education with AI</h1>
+    <p>Learn coding with personalized AI feedback, real-world projects, and direct job support.</p>
+  </section>
+
+  <section class="features" id="features">
+    
+      
+        <div class="grid">
+          <div class="card" onclick="openModal('learning')">
+            <h3>Personalized Learning Paths</h3>
+            <p>AI adapts your coding journey based on skill level and pace.</p>
+          </div>
+          <div class="card" onclick="openModal('feedback')">
+            <h3>Real-Time AI Feedback</h3>
+            <p>Receive instant suggestions and improvements on your code.</p>
+          </div>
+          <div class="card" onclick="openModal('mentorship')">
+            <h3>Live Mentorship</h3>
+            <p>Connect with experts to resolve doubts and get career advice.</p>
+          </div>
+          <div class="card" onclick="openModal('projects')">
+            <h3>Industry Projects</h3>
+            <p>Work on real-world projects to build an impressive portfolio.</p>
+          </div>
+          <div class="card" onclick="openModal('resume')">
+            <h3>AI-Driven Resume Builder</h3>
+            <p>Create job-ready resumes tailored by AI and prep for interviews.</p>
+          </div>
+          <div class="card" onclick="openModal('jobs')">
+            <h3>Job Placement</h3>
+            <p>Get matched with companies hiring directly from the platform.</p>
+          </div>
+        </div>
+      
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Start Your AI Learning Journey Today!</h2>
+    <button onclick="joinNow()">Join the Beta Program</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 AI Coding Mentor. All rights reserved. | Contact: support@aicodingmentor.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
